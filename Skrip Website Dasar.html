@@ -2,34 +2,92 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AKSTOPUP - Top Up Game Murah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AKSTOPUP | Top Up Game Murah, Cepat & Terpercaya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: sans-serif;
-      background-color: #1e1e1e;
-      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      padding: 50px;
+      padding: 40px 20px;
     }
+
+    header {
+      max-width: 800px;
+    }
+
     h1 {
-      color: #00c3ff;
+      font-size: 2.5rem;
+      color: #22d3ee;
+      margin-bottom: 20px;
     }
+
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
     }
-    a {
-      color: #ffd700;
+
+    .banner {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 255, 255, 0.2);
+      margin-bottom: 40px;
+    }
+
+    .btn-wa {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
       text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .btn-wa:hover {
+      background-color: #1eb150;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Selamat Datang di AKSTOPUP</h1>
-  <p>Top Up Game Murah, Cepat & Terpercaya.</p>
-  <p>Hubungi kami di: <a href="https://wa.me/628XXXXXXXXXX" target="_blank">WhatsApp</a></p>
+
+  <header>
+    <img class="banner" src="https://i.imgur.com/FVz6b9u.png" alt="Banner AKSTOPUP" />
+    <h1>Selamat Datang di AKSTOPUP</h1>
+    <p>Top Up Mobile Legends, Free Fire, PUBG, dan game favorit kamu dengan harga <strong>Murah, Cepat & Terpercaya</strong>.</p>
+    <a href="https://wa.me/628XXXXXXXXXX" class="btn-wa" target="_blank">🔰 Chat via WhatsApp</a>
+  </header>
+
+  <footer>
+    &copy; 2025 AKSTOPUP. All rights reserved.
+  </footer>
+
 </body>
 </html>
