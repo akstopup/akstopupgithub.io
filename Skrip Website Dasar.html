@@ -2,8 +2,8 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AKSTOPUP | Top Up Game Murah, Cepat & Terpercaya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AKSTOPUP | Top Up MLBB Murah & Terpercaya</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -16,63 +16,90 @@
       font-family: 'Poppins', sans-serif;
       background-color: #0f172a;
       color: #f8fafc;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      padding: 40px 20px;
+      padding: 30px 15px;
     }
 
     header {
-      max-width: 800px;
+      margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       color: #22d3ee;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .banner {
       width: 100%;
       max-width: 700px;
       border-radius: 10px;
+      margin-bottom: 20px;
       box-shadow: 0 5px 20px rgba(0, 255, 255, 0.2);
-      margin-bottom: 40px;
+    }
+
+    .price-table {
+      margin: 30px auto;
+      width: 100%;
+      max-width: 500px;
+      border-collapse: collapse;
+    }
+
+    .price-table th,
+    .price-table td {
+      border: 1px solid #334155;
+      padding: 12px;
+    }
+
+    .price-table th {
+      background-color: #1e293b;
+    }
+
+    form {
+      margin-top: 30px;
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      width: 100%;
+      max-width: 450px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    input, select {
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
     }
 
     .btn-wa {
       display: inline-block;
       background-color: #25d366;
       color: white;
-      padding: 15px 25px;
-      font-size: 1.1rem;
+      padding: 12px 20px;
+      font-size: 1rem;
       border: none;
       border-radius: 8px;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      margin-top: 10px;
       transition: background-color 0.3s;
     }
 
     .btn-wa:hover {
-      background-color: #1eb150;
+      background-color: #1da955;
     }
 
     footer {
-      margin-top: 50px;
+      margin-top: 40px;
       font-size: 0.9rem;
       color: #94a3b8;
-    }
-
-    @media screen and (max-width: 600px) {
-      h1 {
-        font-size: 1.8rem;
-      }
     }
   </style>
 </head>
@@ -80,14 +107,65 @@
 
   <header>
     <img class="banner" src="https://i.imgur.com/FVz6b9u.png" alt="Banner AKSTOPUP" />
-    <h1>Selamat Datang di AKSTOPUP</h1>
-    <p>Top Up Mobile Legends, Free Fire, PUBG, dan game favorit kamu dengan harga <strong>Murah, Cepat & Terpercaya</strong>.</p>
-    <a href="https://wa.me/628XXXXXXXXXX" class="btn-wa" target="_blank">🔰 Chat via WhatsApp</a>
+    <h1>AKSTOPUP</h1>
+    <p>Top Up Mobile Legends Diamond — Murah, Cepat, & Terpercaya</p>
   </header>
 
+  <h2>💎 Daftar Harga Diamond MLBB</h2>
+  <table class="price-table">
+    <tr>
+      <th>Jumlah Diamond</th>
+      <th>Harga</th>
+    </tr>
+    <tr><td>86 Diamond</td><td>Rp 20.000</td></tr>
+    <tr><td>172 Diamond</td><td>Rp 39.000</td></tr>
+    <tr><td>257 Diamond</td><td>Rp 58.000</td></tr>
+    <tr><td>344 Diamond</td><td>Rp 75.000</td></tr>
+    <tr><td>429 Diamond</td><td>Rp 93.000</td></tr>
+    <tr><td>Twilight Pass</td><td>Rp 150.000</td></tr>
+  </table>
+
+  <h2 style="margin-top: 40px;">📝 Formulir Pemesanan</h2>
+  <form id="orderForm">
+    <input type="text" id="userId" placeholder="Masukkan ID + Server (contoh: 12345678(1234))" required>
+    <select id="paket" required>
+      <option value="">Pilih Paket Diamond</option>
+      <option value="86 Diamond - Rp 20.000">86 Diamond - Rp 20.000</option>
+      <option value="172 Diamond - Rp 39.000">172 Diamond - Rp 39.000</option>
+      <option value="257 Diamond - Rp 58.000">257 Diamond - Rp 58.000</option>
+      <option value="344 Diamond - Rp 75.000">344 Diamond - Rp 75.000</option>
+      <option value="429 Diamond - Rp 93.000">429 Diamond - Rp 93.000</option>
+      <option value="Twilight Pass - Rp 150.000">Twilight Pass - Rp 150.000</option>
+    </select>
+    <input type="text" id="pembayaran" placeholder="Metode Pembayaran (DANA, OVO, dll)" required>
+    <a href="#" id="kirimWA" class="btn-wa" target="_blank">Kirim Pesanan via WhatsApp</a>
+  </form>
+
   <footer>
-    &copy; 2025 AKSTOPUP. All rights reserved.
+    &copy; 2025 AKSTOPUP. Website ini tidak terafiliasi dengan Moonton atau Mobile Legends.
   </footer>
+
+  <script>
+    const kirimWA = document.getElementById("kirimWA");
+    const form = document.getElementById("orderForm");
+
+    kirimWA.addEventListener("click", function(e) {
+      e.preventDefault();
+      const id = document.getElementById("userId").value;
+      const paket = document.getElementById("paket").value;
+      const pembayaran = document.getElementById("pembayaran").value;
+
+      if (!id || !paket || !pembayaran) {
+        alert("Harap isi semua data.");
+        return;
+      }
+
+      const nomor = "628XXXXXXXXXX"; // Ganti dengan nomor WA kamu
+      const pesan = `Halo AKSTOPUP 👋%0ASaya ingin top up:%0A- ID MLBB: ${id}%0A- Paket: ${paket}%0A- Metode Pembayaran: ${pembayaran}`;
+      const url = `https://wa.me/${nomor}?text=${pesan}`;
+      window.open(url, "_blank");
+    });
+  </script>
 
 </body>
 </html>
